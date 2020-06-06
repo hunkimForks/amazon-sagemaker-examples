@@ -45,6 +45,7 @@
         }
         result += "]]"
         var kernel = IPython.notebook.kernel;
+        var kernel = google.colab.kernel;
         if (kernel == null) { 
             kernel = google.colab.kernel;
         }
