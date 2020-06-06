@@ -45,6 +45,9 @@
         }
         result += "]]"
         var kernel = IPython.notebook.kernel;
+        if (kernel == null) { 
+            kernel = google.colab.kernel;
+        }
         kernel.execute("data = " + result)
     }
 </script>
